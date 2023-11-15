@@ -11,7 +11,7 @@ function Home() {
   const [movies, setMovies] = useState([]);
 
   useEffect(()=> {
-    fetch('http://localhost:3000/movies')
+    fetch('https://mymoviz-backend-c2vr.vercel.app/movies')
     .then(response => response.json())
     .then(data => {
       const newMovies = data.movies.map((data, i) => {
